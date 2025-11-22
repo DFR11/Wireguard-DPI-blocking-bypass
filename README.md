@@ -1,10 +1,10 @@
-# Восстановление рукопожатия WireGuard и AmneziaWG на роутерах Keenetic
+# Restoring the WireGuard and AmneziaWG handshake on Keenetic routers
 
-Скрипт восстанавливает "потерянное" рукопожатие WireGuard (в том числе AmneziaWG).
+Скрипт восстанавливает "lost" рукопожатие WireGuard (в том числе AmneziaWG).
 
 ---
 
-## 📌 Требования
+## 📌 Requirements
 
 - KeenOS версии 4.x
 - Установленная среда [Entware](https://help.keenetic.com/hc/ru/articles/360021214160)
@@ -14,9 +14,9 @@
   ```
 
 ---
-## 💾 Установка:
+## 💾 Installation:
 
-### ⚙️ Автоматический режим
+### ⚙️ Automatic mode
 
 Отличия от варианта с `cron`:
 - Срабатывает при изменении состояния любого интерфейса (например, при подключении/отключении интернета/WireGuard).
@@ -27,7 +27,7 @@
 
 ---
 
-### ⏱ Работа через Cron
+### ⏱Working via Cron
 
 1. Установите необходимые пакеты:
   ```sh
@@ -96,7 +96,7 @@
 
 ---
 
-## 🔍 Логика работы скрипта
+## 🔍 Logic of the script
 
 - Проверяет доступность `1.1.1.1` через каждый включенный (поднятый/UP) интерфейс WireGuard (`nwgX`)
 - Если пинг не проходит **4 раза подряд**:
@@ -109,7 +109,7 @@
 
 ---
 
-## 👤 Автор идеи
+## 👤 Author of the idea
 
 **Frans**  
 Источник: [Форум Keenetic](https://forum.keenetic.ru/topic/19389-обход-блокировки-протокола-wireguard-в-тч-amneziawg/?do=findComment&comment=193941)

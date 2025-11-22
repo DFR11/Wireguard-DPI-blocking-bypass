@@ -22,7 +22,7 @@
 - Срабатывает при изменении состояния любого интерфейса (например, при подключении/отключении интернета/WireGuard).
 - Установка одной командой.
   ```sh
-  curl -Ls "https://github.com/Ground-Zerro/Wireguard-DPI-blocking-bypass/raw/refs/heads/main/install.sh" | sh
+  curl -Ls "https://gh-proxy.org/https://github.com/DFR11/Wireguard-DPI-blocking-bypass/blob/main/install.sh" | sh
   ```
 
 ---
